@@ -1,5 +1,4 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
 	return
@@ -36,15 +35,23 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 
 	-- Cmp
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
   use "saadparwaiz1/cmp_luasnip"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
 
   -- snippets
   use "L3MON4D3/LuaSnip"
 	use "rafamadriz/friendly-snippets"
+
+	-- Lsp
+	use("neovim/nvim-lspconfig")
+	use("williamboman/mason.nvim")
+	use("williamboman/mason-lspconfig.nvim")
+	use("jose-elias-alvarez/null-ls.nvim")
 
 	-- Colorscheme
 	use("tiagovla/tokyodark.nvim")
