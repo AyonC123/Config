@@ -32,9 +32,6 @@ return packer.startup(function(use)
 	-- Nvimtree
 	use("nvim-tree/nvim-tree.lua")
 
-	-- Indentline
-	use("lukas-reineke/indent-blankline.nvim")
-
 	-- Cmp
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-buffer")
