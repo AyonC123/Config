@@ -25,7 +25,6 @@ return packer.startup(function(use)
 		run = ":TSUpdate",
 	})
 	use("nvim-treesitter/nvim-treesitter-context")
-	use("windwp/nvim-ts-autotag")
 	use("p00f/nvim-ts-rainbow")
 	use("windwp/nvim-autopairs")
 
