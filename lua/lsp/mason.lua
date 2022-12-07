@@ -5,9 +5,11 @@ local servers = {
 	"jsonls",
 	"sumneko_lua",
 	"pyright",
+	"eslint",
 }
 
 local settings = {
+	pip = {},
 	ui = {
 		border = "rounded",
 		icons = {

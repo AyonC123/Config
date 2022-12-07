@@ -50,6 +50,9 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 
+	-- Impatient
+	use("lewis6991/impatient.nvim")
+
 	-- Colorscheme
 	use("tiagovla/tokyodark.nvim")
 end)

@@ -12,7 +12,7 @@ nnoremap("<leader>e", "<cmd>NvimTreeToggle<CR>")
 -- Telescope
 nnoremap("<C-p>", "<cmd>Telescope find_files<CR>")
 nnoremap("<leader>fb", "<cmd>Telescope buffers<CR>")
-nnoremap("<leader>fw", "<cmd>Telescope grep_string<CR>")
+nnoremap("<leader>fw", "<cmd>Telescope live_grep<CR>")
 
 -- Split switch
 nnoremap("<C-h>", "<C-w>h")
@@ -29,6 +29,10 @@ nnoremap("<C-down>", "<cmd>resize +2<CR>")
 -- Normal mode
 nnoremap("<A-j>", "<cmd>:m .+1<CR>==gi<ESC>")
 nnoremap("<A-k>", "<cmd>:m .-2<CR>==gi<ESC>")
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
+nnoremap("n", "nzzzv")
+nnoremap("N", "Nzzzv")
 
 -- Insert mode
 inoremap("jk", "<ESC>")

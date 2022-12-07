@@ -3,8 +3,6 @@ local o = vim.opt
 local g = vim.g
 
 -- options
-vim.cmd("syntax enable")
-
 o.guicursor = ""
 o.cursorline = true
 o.scrolloff = 10
