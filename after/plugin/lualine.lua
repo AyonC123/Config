@@ -40,7 +40,7 @@ lualine.setup({
 	},
 	tabline = {
 		lualine_a = { "tabs" },
-		lualine_b = { "windows" },
+		lualine_b = {},
 		lualine_c = {},
 		lualine_x = {},
 		lualine_y = {},
