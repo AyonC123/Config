@@ -1,5 +1,4 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vimpacker
-
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
 	return
@@ -52,6 +51,10 @@ return packer.startup(function(use)
 
 	-- Impatient
 	use("lewis6991/impatient.nvim")
+
+	-- Git
+	use("lewis6991/gitsigns.nvim")
+	use("sindrets/diffview.nvim")
 
 	-- Colorscheme
 	use("tiagovla/tokyodark.nvim")

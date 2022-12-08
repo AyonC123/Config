@@ -14,6 +14,14 @@ nnoremap("<C-p>", "<cmd>Telescope find_files<CR>")
 nnoremap("<leader>fb", "<cmd>Telescope buffers<CR>")
 nnoremap("<leader>fw", "<cmd>Telescope live_grep<CR>")
 
+-- Git
+nnoremap("<leader>ho", "<cmd>DiffviewOpen<CR>")
+nnoremap("<leader>hc", "<cmd>DiffviewClose<CR>")
+
+-- Tabs
+nnoremap("<leader>n", "<cmd>tabnew<CR>")
+nnoremap("<leader>c", "<cmd>tabclose<CR>")
+
 -- Split switch
 nnoremap("<C-h>", "<C-w>h")
 nnoremap("<C-j>", "<C-w>j")
