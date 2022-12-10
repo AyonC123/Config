@@ -57,5 +57,5 @@ return packer.startup(function(use)
 	use("sindrets/diffview.nvim")
 
 	-- Colorscheme
-	use("tiagovla/tokyodark.nvim")
+	use("folke/tokyonight.nvim")
 end)
