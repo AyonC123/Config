@@ -57,5 +57,8 @@ return packer.startup(function(use)
 	use("sindrets/diffview.nvim")
 
 	-- Colorscheme
-	use("folke/tokyonight.nvim")
+	use({
+		"rose-pine/neovim",
+		as = "rose-pine",
+	})
 end)
