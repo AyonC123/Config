@@ -35,8 +35,8 @@ nnoremap("<C-up>", "<cmd>resize -2<CR>")
 nnoremap("<C-down>", "<cmd>resize +2<CR>")
 
 -- Normal mode
-nnoremap("<A-j>", "<cmd>:m .+1<CR>==gi<ESC>")
-nnoremap("<A-k>", "<cmd>:m .-2<CR>==gi<ESC>")
+nnoremap("<C-j>", "<cmd>:m .+1<CR>==gi<ESC>")
+nnoremap("<C-k>", "<cmd>:m .-2<CR>==gi<ESC>")
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 nnoremap("n", "nzzzv")
@@ -53,6 +53,6 @@ vnoremap(">", ">gv")
 vnoremap("<", "<gv")
 
 -- Move text up and down in Visual Mode
-vnoremap("<A-j>", ":m .+2<CR>gv")
-vnoremap("<A-k>", ":m .-2<CR>gv")
+vnoremap("<C-j>", ":m .+2<CR>gv")
+vnoremap("<C-k>", ":m .-2<CR>gv")
 vnoremap("p", '"_dP')
