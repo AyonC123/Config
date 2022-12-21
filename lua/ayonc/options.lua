@@ -28,9 +28,6 @@ vim.opt.wildmenu = true
 
 vim.opt.wrap = false
 
-vim.opt.showmatch = true
-vim.opt.showmode = false
-
 vim.opt.termguicolors = true
 
 vim.opt.splitbelow = true
