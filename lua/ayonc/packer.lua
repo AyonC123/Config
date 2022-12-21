@@ -45,6 +45,8 @@ return require("packer").startup(function(use)
 
 	use("nvim-lualine/lualine.nvim")
 
+	use("lewis6991/impatient.nvim")
+
 	-- Colorscheme
 	use({
 		"rose-pine/nvim",

@@ -65,6 +65,9 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C-k>"] = cmp.mapping.scroll_docs(-1, { "i", "c" }),
 })
 
+cmp_mappings["<Tab>"] = nil
+cmp_mappings["<S-Tab>"] = nil
+
 lsp.setup_nvim_cmp({
 	snippet = {
 		expand = function(args)
@@ -86,13 +89,6 @@ lsp.setup_nvim_cmp({
 			})[entry.source.name]
 			return vim_item
 		end,
-	},
-	sources = {
-		{ name = "nvim_lsp" },
-		{ name = "nvim_lua" },
-		{ name = "luasnip" },
-		{ name = "buffer" },
-		{ name = "path" },
 	},
 	experimental = {
 		ghost_text = true,
@@ -120,14 +116,12 @@ lsp.on_attach(function(client, bufnr)
 
 	vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 	vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-	vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
-	vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
+	vim.keymap.set("n", "<leader>ws", vim.lsp.buf.workspace_symbol, opts)
 	vim.keymap.set("n", "[d", vim.diagnostic.goto_next, opts)
 	vim.keymap.set("n", "]d", vim.diagnostic.goto_prev, opts)
-	vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
-	vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts)
-	vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
-	vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
+	vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+	vim.keymap.set("n", "<leader>rr", vim.lsp.buf.references, opts)
+	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 end)
 
 lsp.setup()
@@ -143,11 +137,4 @@ vim.diagnostic.config({
 		header = "",
 		prefix = "",
 	},
-})
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-	border = "rounded",
-})
-
-vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-	border = "rounded",
 })
