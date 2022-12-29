@@ -65,9 +65,6 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C-k>"] = cmp.mapping.scroll_docs(-1, { "i", "c" }),
 })
 
-cmp_mappings["<Tab>"] = nil
-cmp_mappings["<S-Tab>"] = nil
-
 lsp.setup_nvim_cmp({
 	snippet = {
 		expand = function(args)
@@ -91,7 +88,7 @@ lsp.setup_nvim_cmp({
 		end,
 	},
 	experimental = {
-		ghost_text = true,
+		ghost_text = false,
 		native_menu = false,
 	},
 })
