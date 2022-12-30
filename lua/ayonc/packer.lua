@@ -47,6 +47,9 @@ return require("packer").startup(function(use)
 
 	use("lewis6991/impatient.nvim")
 
+	use("nvim-tree/nvim-tree.lua")
+	use("nvim-tree/nvim-web-devicons")
+
 	-- Colorscheme
 	use({
 		"rose-pine/nvim",
