@@ -1,6 +1,18 @@
 require("nvim-treesitter.configs").setup({
 	-- A list of parser names, or "all"
-	ensure_installed = { "help", "css", "lua", "javascript", "typescript", "tsx", "json", "python" },
+	ensure_installed = {
+		"c",
+		"help",
+		"css",
+		"lua",
+		"javascript",
+		"typescript",
+		"tsx",
+		"json",
+		"python",
+		"markdown",
+		"embedded_template",
+	},
 
 	sync_install = false,
 
