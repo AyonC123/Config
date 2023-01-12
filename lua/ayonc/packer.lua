@@ -9,6 +9,8 @@ return require("packer").startup(function(use)
 
 	use("nvim-lua/plenary.nvim")
 
+	use("nvim-tree/nvim-web-devicons")
+
 	use({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.0",
@@ -48,9 +50,10 @@ return require("packer").startup(function(use)
 	use("lewis6991/impatient.nvim")
 
 	use("nvim-tree/nvim-tree.lua")
-	use("nvim-tree/nvim-web-devicons")
 
 	use("numToStr/Comment.nvim")
+
+	use("lewis6991/gitsigns.nvim")
 
 	-- Colorscheme
 	use({

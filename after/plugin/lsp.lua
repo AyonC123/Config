@@ -45,6 +45,7 @@ lsp.ensure_installed({
 	"jsonls",
 	"pyright",
 	"html",
+	"omnisharp",
 })
 
 lsp.configure("sumneko_lua", sumneko)
